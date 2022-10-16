@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* MAIN */
+
+:root{
+    --main-bgc: hsl(140, 21%, 28%);
+    --main-color: hsl(0, 0%, 75%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bgc)
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* TITLE */
+
+h1{
+    margin: 60px 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+h1 span{
+    color: hsl(0, 0%, 75%);
+    text-shadow: 3px 3px 12px hsla(0, 0%, 75%, 0.61);
+}
+
+/* CLOCK */
+
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+    border: 5px solid var(--main-color);
+    border-radius: 100%;
+    transition: 0.1s;
+}
+.hover{
+    transform: scale(1.05);
+
+}
+.clock p{
+    font-size: 3rem;
+    color: var(--main-color);
+
+}
+
+/* START/PAUSE/STOP BUTTONS */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.navigation button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--main-bgc);
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.04s;
+}
+.navigation button:hover{
+    transform: scale(1.04);
+    background-color: var(--main-color);
+}
+.navigation button span{
+    font-size: 100px;
+}
+#arrow{
+    font-size: 110px;
+}
+#pause{
+    font-size: 80px;
+}
